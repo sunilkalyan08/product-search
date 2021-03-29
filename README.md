@@ -5,20 +5,20 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - 2.6.3
 
-* System dependencies
+* Rails version - 6.0.3
 
-* Configuration
+* Database creation - mysql
 
-* Database creation
+* Database initialization - change the database yml with your user name and password
 
-* Database initialization
+* Services - Redis to be installed
 
-* How to run the test suite
+* After commands
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+  1. rake db:create, rake db:migrate, rake db:seed
+  2. Run application with rails s and open browser and run http://localhost:3000/products
+  3. Here you go search the barcodes(which is available in seed/in products table)
 
-* ...

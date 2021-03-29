@@ -1,0 +1,20 @@
+<% if @products.present? %>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="1">Product Name</th>
+        <th colspan="1">Price</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @products.each do |product| %>
+        <tr>
+          <td><%= product.name %></td>
+          <td><%= product.price %></td>
+          <td></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>

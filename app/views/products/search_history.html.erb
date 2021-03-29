@@ -1,0 +1,9 @@
+<%= link_to "Start searching again", products_path%>
+
+<%= render partial: 'products' %>
+
+<br/>
+
+<% if @total_sum.present? %>
+  <%= "Total sum is #{@total_sum}"%>
+<% end %>
